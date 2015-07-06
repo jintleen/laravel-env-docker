@@ -6,6 +6,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update
 
 RUN apt-get -y install \
+    git \
     curl \
     php5 \
     php5-gd \
