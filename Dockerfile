@@ -22,7 +22,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/apache2.conf
-Run sed -i "s#/var/www/html#/var/www/html/public#g" /etc/apache2/sites-available/000-default.conf
+RUN sed -i "s#/var/www/html#/var/www/html/public#g" /etc/apache2/sites-available/000-default.conf
 
 RUN a2enmod rewrite
 RUN php5enmod mcrypt
