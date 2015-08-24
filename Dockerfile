@@ -30,7 +30,7 @@ RUN php5enmod mcrypt
 RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
 
 ADD run.sh /run.sh
-Run chmod 755 /run.sh
+RUN chmod 755 /run.sh
 
 EXPOSE 80
 WORKDIR /app
