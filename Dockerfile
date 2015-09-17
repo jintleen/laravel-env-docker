@@ -10,7 +10,7 @@ RUN apt-get -y install \
     curl \
     php5 \
     php5-gd \
-    php5-mysql \
+    php5-mysqlnd \
     php5-mcrypt \
     php5-json \
     php5-curl \
